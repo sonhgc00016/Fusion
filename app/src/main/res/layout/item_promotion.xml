@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemPromotion_llStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/itemPromotion_rowPadding"
+            android:text="@string/store"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemPromotion_textSizeTitle" />
+
+        <TextView
+            android:id="@+id/itemPromotion_tvStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemPromotion_textSizeTitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemPromotion_llProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemPromotion_llStore"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100.2">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:padding="@dimen/itemPromotion_rowPaddingSpecial"
+                android:text="@string/product"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/itemPromotion_textSizeTitle"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@color/divider_color"></View>
+
+            <TextView
+                android:id="@+id/itemPromotion_tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:padding="@dimen/itemPromotion_rowPaddingSpecial"
+                android:text="@string/description"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/itemPromotion_textSizeTitle"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemPromotion_llChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemPromotion_llProduct"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>

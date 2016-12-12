@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.MyProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/myProfile_rltPaddingBottom">
+
+        <LinearLayout
+            android:id="@+id/myProfile_llProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/myProfile_tblProfile_marginLeft"
+            android:layout_marginRight="@dimen/myProfile_tblProfile_marginRight"
+            android:layout_marginTop="@dimen/myProfile_tblProfile_marginTop"
+            android:background="@drawable/bg_tablemyprofile"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/full_name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvFullName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/full_name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/id_number"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvIdNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/id_number"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvDateOfBirth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/working_hours"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TableRow>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvWorkingHours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/working_hours"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/off_day"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvOffDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/off_day"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/role"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvRole"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/role"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordercell"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/team_manager"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvTeamManager"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/team_manager"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100.2">
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/contact"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/divider_color"></View>
+
+                <TextView
+                    android:id="@+id/myProfile_tvContact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:padding="@dimen/myProfile_rowPadding"
+                    android:text="@string/contact"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/myProfile_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/myProfile_imgChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/imgchangepassword"
+            android:contentDescription="@string/img_desc" />
+    </RelativeLayout>
+</FrameLayout>

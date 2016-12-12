@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemSpinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/salestracking_bgedittext"
+    android:drawableRight="@drawable/salestracking_btn_dropdown"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/salesStracking_marginLeft"
+    android:textColor="@color/textcolor"
+    android:textSize="@dimen/salesTracking_textSizeData"
+    android:textStyle="bold" />

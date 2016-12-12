@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.ReportFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/report_rltPromotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/report_tvPromotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salesTracking_lnlData"
+                android:background="@drawable/report_dropdown_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/report_tvProductinfo_paddingLeft"
+                android:text="@string/promotion"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/report_textSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/report_imgUpDownPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/report_img_marginRight"
+                android:layout_marginTop="@dimen/report_img_marginTop"
+                android:background="@drawable/report_imgdown_arrow"
+                android:contentDescription="@string/img_desc" />
+
+            <RelativeLayout
+                android:id="@+id/report_rltPromotionData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/report_tvPromotion"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/report_lvPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+                <TextView
+                    android:id="@+id/report_tvNodataPromotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/report_lvPromotion"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/no_data"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/report_textSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_rltPreviousMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_rltPromotion">
+
+            <TextView
+                android:id="@+id/report_tvPreviousMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salesTracking_lnlData"
+                android:background="@drawable/report_dropdown_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/report_tvProductinfo_paddingLeft"
+                android:text="@string/previous_month"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/report_textSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/report_imgUpDownPreviousMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/report_img_marginRight"
+                android:layout_marginTop="@dimen/report_img_marginTop"
+                android:background="@drawable/report_imgdown_arrow"
+                android:contentDescription="@string/img_desc" />
+
+            <RelativeLayout
+                android:id="@+id/report_rltPreviousMonthData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/report_tvPreviousMonth"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/report_tvNodataPreviousMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_data"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/report_textSize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/report_lnlTitlePreviousMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100.6">
+
+                    <TextView
+                        android:id="@+id/report_tvBrandPrevious"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="28"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/category"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvMTDPrevious"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="22"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/mtd"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvTargetPrevious"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="23"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/target"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvAchievedPrevious"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="27"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/achieved"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/report_lvPreviousMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/report_lnlTitlePreviousMonth" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_rltCurrentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_rltPreviousMonth">
+
+            <TextView
+                android:id="@+id/report_tvCurrentMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salesTracking_lnlData"
+                android:background="@drawable/report_dropdown_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/report_tvProductinfo_paddingLeft"
+                android:text="@string/current_month"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/report_textSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/report_imgUpDownCurrentMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/report_img_marginRight"
+                android:layout_marginTop="@dimen/report_img_marginTop"
+                android:background="@drawable/report_imgdown_arrow"
+                android:contentDescription="@string/img_desc" />
+
+            <RelativeLayout
+                android:id="@+id/report_rltCurrentMonthData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/report_tvCurrentMonth"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/report_tvNodataCurrentMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_data"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/report_textSize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/report_lnlTitleCurrentMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100.6">
+
+                    <TextView
+                        android:id="@+id/report_tvBrand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="28"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/category"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvMTD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="22"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/mtd"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvTarget"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="23"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/target"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/divider_color"></View>
+
+                    <TextView
+                        android:id="@+id/report_tvAchieved"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="27"
+                        android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+                        android:text="@string/achieved"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/itemReportMonth_textSizeTitle"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/report_lvCurrentMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/report_lnlTitleCurrentMonth" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

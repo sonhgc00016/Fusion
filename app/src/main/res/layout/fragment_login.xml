@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.LoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/rltMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_rltMain_marginLeft"
+        android:layout_marginRight="@dimen/login_rltMain_marginRight"
+        android:layout_marginTop="@dimen/login_rltMain_marginTop">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_bg_logo"
+            android:contentDescription="@string/img_desc" />
+
+        <TextView
+            android:id="@+id/lblUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/login_tvUsername_marginBottom"
+            android:layout_marginTop="@dimen/login_tvUsername_marginTop"
+            android:text="@string/username"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/login_textSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUsername"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_bg_edtfield"
+            android:paddingLeft="@dimen/login_paddingText"
+            android:paddingRight="@dimen/login_paddingText"
+            android:textColor="@color/textcolor"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/login_tvPassword_marginBottom"
+            android:layout_marginTop="@dimen/login_tvPassword_marginTop"
+            android:text="@string/password"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/login_textSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblPassword"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_bg_edtfield"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/login_paddingText"
+            android:paddingRight="@dimen/login_paddingText"
+            android:textColor="@color/textcolor"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/imgSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPassword"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/login_imgSignin_marginTop"
+            android:background="@drawable/login_imgsignin" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,135 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Actionbar. -->
+    <dimen name="actionbar_textsize">20sp</dimen>
+    <dimen name="actionbar_marginTop">15dp</dimen>
+    <dimen name="actionbar_marginBottom">15dp</dimen>
+    <dimen name="actionbar_marginLeft">10dp</dimen>
+    <dimen name="actionbar_marginRight">10dp</dimen>
+    <dimen name="actionbar_tvItemSoldCount_margin">5dp</dimen>
+    <dimen name="actionbar_tvItemSold_with_height">20dp</dimen>
+
+    <!-- Login Fragment -->
+    <dimen name="login_rltMain_marginTop">30dp</dimen>
+    <dimen name="login_rltMain_marginLeft">40dp</dimen>
+    <dimen name="login_rltMain_marginRight">40dp</dimen>
+    <dimen name="login_textSize">15sp</dimen>
+    <dimen name="login_tvUsername_marginTop">30dp</dimen>
+    <dimen name="login_tvUsername_marginBottom">5dp</dimen>
+    <dimen name="login_tvPassword_marginTop">10dp</dimen>
+    <dimen name="login_tvPassword_marginBottom">5dp</dimen>
+    <dimen name="login_imgSignin_marginTop">40dp</dimen>
+    <dimen name="login_paddingText">10dp</dimen>
+
+    <!-- Home Fragment -->
+    <dimen name="home_tvWelcome_textSize">14sp</dimen>
+    <dimen name="home_tvUser_textSize">15sp</dimen>
+    <dimen name="home_tvWelcome_marginRight">10dp</dimen>
+    <dimen name="home_rltWelcome_marginTop">10dp</dimen>
+    <dimen name="home_rltWelcome_marginBottom">10dp</dimen>
+    <dimen name="home_rltContent_marginTop">50dp</dimen>
+    <dimen name="home_rltContent_marginBottom">50dp</dimen>
+    <dimen name="home_rltContent_marginLeft">50dp</dimen>
+    <dimen name="home_rltContent_marginRight">50dp</dimen>
+    <dimen name="home_imgMyProfile_marginRight">50dp</dimen>
+    <dimen name="home_imgMyProfile_marginBottom">50dp</dimen>
+
+    <!-- Myprofile Fragment -->
+    <dimen name="myProfile_textSizeNormal">15sp</dimen>
+    <dimen name="myProfile_textSizeData">17sp</dimen>
+    <dimen name="myProfile_rowPadding">7dp</dimen>
+    <dimen name="myProfile_col_marginRight">50dp</dimen>
+    <dimen name="myProfile_tblProfile_marginLeft">20dp</dimen>
+    <dimen name="myProfile_tblProfile_marginRight">20dp</dimen>
+    <dimen name="myProfile_tblProfile_marginTop">20dp</dimen>
+    <dimen name="myProfile_rltPaddingBottom">20dp</dimen>
+
+    <!-- DutyRoster Fragment -->
+    <dimen name="dutyRoster_textSize">15sp</dimen>
+
+    <!-- SalesTracking Fragment -->
+    <dimen name="salesTracking_textSizeNormal">15sp</dimen>
+    <dimen name="salesTracking_textSizeData">16sp</dimen>
+    <dimen name="salesStracking_marginRight">30dp</dimen>
+    <dimen name="salesStracking_marginLeft">10dp</dimen>
+    <dimen name="salesTracking_marginTop">10dp</dimen>
+    <dimen name="salesTracking_textSizeProductInfo">18sp</dimen>
+    <dimen name="salesTracking_marginTopProductInfo">30dp</dimen>
+    <dimen name="salesTracking_marginLeftProductInfo">20dp</dimen>
+
+    <!-- item Product -->
+    <dimen name="itemProduct_textSizeNormal">15sp</dimen>
+    <dimen name="itemProduct_textSizeLarge">16sp</dimen>
+    <dimen name="itemProduct_tvOrdinalNumber_marginLeftRight">20dp</dimen>
+    <dimen name="itemProduct_tvItemID_marginLeft">5dp</dimen>
+    <dimen name="itemProduct_imgAddItem_marginRight">20dp</dimen>
+    <dimen name="itemProduct_marginTop">10dp</dimen>
+    <dimen name="itemProduct_marginLine">5dp</dimen>
+
+    <!-- Custom Alert Dialog -->
+    <dimen name="customDialog_textSizeTitle">20sp</dimen>
+    <dimen name="customDialog_textSizeMessage">18sp</dimen>
+    <dimen name="customDialog_marginTitle">10dp</dimen>
+    <dimen name="customDialog_marginMessage">15dp</dimen>
+
+    <!-- item ItemSold -->
+    <dimen name="itemSold_textSizeNormal">15sp</dimen>
+    <dimen name="itemSold_textSizeLarge">16sp</dimen>
+    <dimen name="itemSold_textSizeStore">18sp</dimen>
+    <dimen name="itemSold_tvOrdinalNumber_marginLeftRight">20dp</dimen>
+    <dimen name="itemSold_tvItemID_marginLeft">5dp</dimen>
+    <dimen name="itemSold_imgAddItem_marginRight">20dp</dimen>
+    <dimen name="itemSold_marginTop">10dp</dimen>
+    <dimen name="itemSold_marginLine">5dp</dimen>
+    <dimen name="itemSold_edtQuantity_paddingLeft">5dp</dimen>
+    <dimen name="itemSold_edtQuantity_marginRight">10dp</dimen>
+    <dimen name="itemSold_edtQuantity_marginLeft">10dp</dimen>
+    <dimen name="itemSold_tvStore_marginLeft">10dp</dimen>
+    <dimen name="itemSold_tvStore_marginTop">10dp</dimen>
+
+    <!-- item Promotion -->
+    <dimen name="itemPromotion_textSizeNormal">12sp</dimen>
+    <dimen name="itemPromotion_textSizeTitle">15sp</dimen>
+    <dimen name="itemPromotion_rowPadding">15dp</dimen>
+    <dimen name="itemPromotion_rowPaddingSpecial">15dp</dimen>
+    <dimen name="itemPromotion_col_marginRight">50dp</dimen>
+    <dimen name="itemPromotion_tblProfile_marginLeft">20dp</dimen>
+    <dimen name="itemPromotion_tblProfile_marginRight">20dp</dimen>
+    <dimen name="itemPromotion_tblProfile_marginTop">20dp</dimen>
+
+    <!-- Report Fragment -->
+    <dimen name="report_textSize">18sp</dimen>
+    <dimen name="report_tvProductinfo_paddingLeft">20dp</dimen>
+    <dimen name="report_img_marginRight">15dp</dimen>
+    <dimen name="report_img_marginTop">15dp</dimen>
+
+    <!-- item Report Month -->
+    <dimen name="itemReportMonth_textSizeNormal">12sp</dimen>
+    <dimen name="itemReportMonth_textSizeTitle">15sp</dimen>
+    <dimen name="itemReportMonth_rowPadding">7dp</dimen>
+    <dimen name="itemReportMonth_rowPaddingSpecial">15dp</dimen>
+    <dimen name="itemReportMonth_col_marginRight">50dp</dimen>
+    <dimen name="itemReportMonth_tblProfile_marginLeft">20dp</dimen>
+    <dimen name="itemReportMonth_tblProfile_marginRight">20dp</dimen>
+    <dimen name="itemReportMonth_tblProfile_marginTop">20dp</dimen>
+
+    <!-- Change Password Fragment -->
+    <dimen name="change_password_btnSubmit_marginBottom">20dp</dimen>
+
+    <!-- Membership Fragment -->
+    <dimen name="membership_textSizeNormal">15sp</dimen>
+    <dimen name="membership_textSizeData">16sp</dimen>
+    <dimen name="membership_marginRight">30dp</dimen>
+    <dimen name="membership_marginLeft">10dp</dimen>
+    <dimen name="membership_marginTop">10dp</dimen>
+
+    <!-- Item Customer Search-->
+    <dimen name="item_customer_textSizeName">18sp</dimen>
+    <dimen name="item_customer_textSizeInfo">16sp</dimen>
+
+    <!-- Custom Dialog Term -->
+    <dimen name="customDialog_marginContent">10dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/actionbar_topbar">
+
+    <ImageView
+        android:id="@+id/actionbar_imgLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/actionbar_marginRight"
+        android:layout_marginLeft="@dimen/actionbar_marginLeft"
+        android:layout_marginRight="@dimen/actionbar_marginRight"
+        android:layout_marginStart="@dimen/actionbar_marginLeft"
+        android:background="@drawable/actionbar_imgempty"
+        android:contentDescription="@string/img_desc" />
+
+    <TextView
+        android:id="@+id/actionbar_tvHeadingPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/actionbar_marginBottom"
+        android:layout_marginTop="@dimen/actionbar_marginTop"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/actionbar_imgLeft"
+        android:layout_toLeftOf="@+id/actionbar_imgRight"
+        android:layout_toRightOf="@+id/actionbar_imgLeft"
+        android:layout_toStartOf="@+id/actionbar_imgRight"
+        android:gravity="center_horizontal"
+        android:text="@string/heading_page"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/actionbar_textsize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/actionbar_imgRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/actionbar_tvItemSoldCount"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/actionbar_marginRight"
+        android:layout_marginLeft="@dimen/actionbar_marginLeft"
+        android:layout_marginRight="@dimen/actionbar_marginRight"
+        android:layout_marginStart="@dimen/actionbar_marginLeft"
+        android:background="@drawable/actionbar_imgitemsold"
+        android:contentDescription="@string/img_desc" />
+
+    <TextView
+        android:id="@+id/actionbar_tvItemSoldCount"
+        android:layout_width="@dimen/actionbar_tvItemSold_with_height"
+        android:layout_height="@dimen/actionbar_tvItemSold_with_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/actionbar_tvItemSoldCount_margin"
+        android:layout_marginTop="@dimen/actionbar_tvItemSoldCount_margin"
+        android:background="@drawable/bg_item_sold_count"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/item_sold_count"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

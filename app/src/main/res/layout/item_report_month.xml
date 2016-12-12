@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100.6">
+
+        <TextView
+            android:id="@+id/itemReportMonth_tvBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="28"
+            android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+            android:text="@string/category"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemReportMonth_textSizeTitle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/divider_color"></View>
+
+        <TextView
+            android:id="@+id/itemReportMonth_tvMTD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="22"
+            android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+            android:text="@string/mtd"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemReportMonth_textSizeTitle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/divider_color"></View>
+
+        <TextView
+            android:id="@+id/itemReportMonth_tvTarget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="23"
+            android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+            android:text="@string/target"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemReportMonth_textSizeTitle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/divider_color"></View>
+
+        <TextView
+            android:id="@+id/itemReportMonth_tvAchieved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="27"
+            android:padding="@dimen/itemReportMonth_rowPaddingSpecial"
+            android:text="@string/achieved"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/itemReportMonth_textSizeTitle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color"></View>
+
+</LinearLayout>

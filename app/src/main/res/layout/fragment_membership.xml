@@ -1,0 +1,523 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.MembershipFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/membership_lnlData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/membership_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/salutation"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/membership_spnSalutation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/salestracking_bgedittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/full_name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtFullName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="Enter Full name"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/gender"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rbtnGroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:checkedButton="@+id/membership_rbtnFemale"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/membership_rbtnFemale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:button="@drawable/custom_radio_button_selector"
+                        android:text="@string/female"
+                        android:textColor="@color/textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/membership_rbtnMale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:button="@drawable/custom_radio_button_selector"
+                        android:text="@string/male"
+                        android:textColor="@color/textcolor" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/nric_fin"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtNricFin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="Enter IC/Passport"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/membership_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70">
+
+                    <EditText
+                        android:id="@+id/membership_edtDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/salestracking_bgedittext"
+                        android:editable="false"
+                        android:paddingLeft="@dimen/membership_marginLeft"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/membership_textSizeData"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/membership_imgCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/salestracking_imgcalendar" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/membership_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/nationality"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/membership_spnNationality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/membership_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/races"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/membership_spnRace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/email"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="Enter Email"
+                    android:padding="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/address"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="70"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="Enter Address"
+                    android:maxLines="5"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/postal_code"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtPostalCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="Postal Code"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/membership_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/contact_no"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtHandphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="@string/handphone"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/membership_edtHomeOffice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:background="@drawable/salestracking_bgedittext"
+                    android:hint="@string/home_office"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/membership_marginLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/membership_textSizeData"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:layout_weight="30"
+                    android:text="@string/status"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/membership_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/membership_rbtnSingle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_radio_button_selector"
+                        android:text="@string/singer"
+                        android:textColor="@color/textcolor" />
+
+                    <RadioButton
+                        android:id="@+id/membership_rbtnWithKids"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:button="@drawable/custom_radio_button_selector"
+                        android:text="@string/with_kids"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/membership_rbtnMarried"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:button="@drawable/custom_radio_button_selector"
+                    android:text="@string/married"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/membership_cbTerm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/membership_marginLeft"
+                    android:button="@drawable/custom_checkbox_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/term"
+                    android:textColor="@color/textcolor" />
+
+                <TextView
+                    android:id="@+id/membership_tvLinkTerm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/term_link"
+                    android:textColor="@color/link_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/membership_imgSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/membership_imgsubmit" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.SalesTrackingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/salesTracking_lnlData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/salesStracking_marginLeft"
+                    android:layout_weight="20"
+                    android:text="@string/date"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/salesTracking_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="80">
+
+                    <EditText
+                        android:id="@+id/salesTracking_edtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/salestracking_bgedittext"
+                        android:editable="false"
+                        android:paddingLeft="@dimen/salesStracking_marginLeft"
+                        android:text="@string/date"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/salesTracking_textSizeData"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/salesTracking_imgCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/salestracking_imgcalendar" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/salesStracking_marginLeft"
+                    android:layout_weight="20"
+                    android:text="@string/store"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/salesTracking_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/salesTracking_spnStores"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="80"
+                    android:background="@drawable/salestracking_bgedittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/salesTracking_marginTop"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/salesStracking_marginLeft"
+                    android:layout_weight="20"
+                    android:text="@string/keyword"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/salesTracking_textSizeNormal"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="80">
+
+                    <EditText
+                        android:id="@+id/salesTracking_edtKeyword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/salestracking_bgedittext"
+                        android:hint="@string/hintKeyword"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="@dimen/salesStracking_marginLeft"
+                        android:paddingRight="@dimen/salesStracking_marginLeft"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@null"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/salesTracking_textSizeData"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/salesTracking_imgX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/sales_tracking_img_x" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvProductinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salesTracking_lnlData"
+            android:layout_marginLeft="@dimen/salesTracking_marginLeftProductInfo"
+            android:layout_marginTop="@dimen/salesTracking_marginTopProductInfo"
+            android:text="@string/product_info"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/salesTracking_textSizeProductInfo"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvProductinfo"
+            android:layout_margin="@dimen/itemProduct_marginLine"
+            android:background="@drawable/line" />
+
+        <ListView
+            android:id="@+id/salesTracking_lvProductInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vLine"></ListView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,3 @@
+int attr layout_angle 0x7f010000
+int[] styleable RotateLayout_Layout { 0x7f010000 }
+int styleable RotateLayout_Layout_layout_angle 0

@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tvo.nano.fusioncosmetics.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/home_rltWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_bg_welcomebar">
+
+            <LinearLayout
+                android:id="@+id/home_lnWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/home_rltWelcome_marginBottom"
+                android:layout_marginTop="@dimen/home_rltWelcome_marginTop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_tvlWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/home_tvWelcome_marginRight"
+                    android:text="@string/welcome"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/home_tvWelcome_textSize" />
+
+                <TextView
+                    android:id="@+id/home_tvUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvWelcome"
+                    android:text="@string/user"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/home_tvUser_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_rltContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_rltWelcome"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/home_rltContent_marginBottom"
+            android:layout_marginLeft="@dimen/home_rltContent_marginLeft"
+            android:layout_marginRight="@dimen/home_rltContent_marginRight"
+            android:layout_marginTop="@dimen/home_rltContent_marginTop">
+
+            <ImageView
+                android:id="@+id/home_imgMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/home_imgMyProfile_marginBottom"
+                android:layout_marginRight="@dimen/home_imgMyProfile_marginRight"
+                android:background="@drawable/home_imgmyprofile" />
+
+            <ImageView
+                android:id="@+id/home_imgDutyRoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/home_imgMyProfile"
+                android:background="@drawable/home_imgdutyroaster" />
+
+            <ImageView
+                android:id="@+id/home_imgSalesTracking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imgMyProfile"
+                android:layout_marginBottom="@dimen/home_imgMyProfile_marginBottom"
+                android:background="@drawable/home_imgsalestracking" />
+
+            <ImageView
+                android:id="@+id/home_imgReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imgMyProfile"
+                android:layout_toEndOf="@+id/home_imgMyProfile"
+                android:layout_toRightOf="@+id/home_imgMyProfile"
+                android:background="@drawable/home_imgreports" />
+
+            <ImageView
+                android:id="@+id/home_imgMembership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imgSalesTracking"
+                android:background="@drawable/home_imgmembership" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

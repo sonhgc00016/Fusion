@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customdialog_dialogbox">
+
+    <TextView
+        android:id="@+id/customDialog_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/customDialog_marginTitle"
+        android:text="@string/title"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/customDialog_textSizeTitle"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/customDialog_vLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/customDialog_tvTitle"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/customDialog_tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customDialog_vLine"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/customDialog_marginMessage"
+        android:text="@string/message"
+        android:gravity="center"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/customDialog_textSizeMessage"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/customDialog_imgOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customDialog_tvMessage"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/customdialog_imgok"
+        android:contentDescription="@string/img_desc" />
+
+</RelativeLayout>
